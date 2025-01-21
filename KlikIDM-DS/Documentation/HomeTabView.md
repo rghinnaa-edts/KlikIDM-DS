@@ -5,7 +5,7 @@
 //  Created by Rizka Ghinna Auliya on 21/01/25.
 //
 
-HomeTabView -> [Code Example](https://github.com/user/repo/KlikIDM-DS/View/Tabs/HomeTabView.swift)
+HomeTabView -> [Code Example](https://github.com/rghinnaa-edts/KlikIDM-DS/blob/main/KlikIDM-DS/View/Tabs/HomeTabView.swift)
 =============
 
 `HomeTabView` is a custom `Tab` for IOS using SwiftUI that provides a three-tab layout with animated transitions and visual effects. It allows developers to create visually appealing tabs with smooth animations and delegate callbacks for tab selection changes.
