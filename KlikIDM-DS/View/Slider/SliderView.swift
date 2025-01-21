@@ -15,13 +15,19 @@ struct SliderView: View {
     ]
     
     @State private var isLoading = false
+    @State private var selectedTab: Int = 0
     
     var body: some View {
         ScrollView {
             VStack(spacing: 0) {
                 KlikIDMTabs(
-                    type: KlikIDMTabs.TabType.home_new,
-                    tabs: tabhome
+                    type: KlikIDMTabs.TabType.homeNew,
+                    tabs: tabhome,
+                    selectedTabHomeNew: $selectedTab,
+                    onTabSelected: { index in
+                        selectedTab = index
+                        
+                    }
                 )
                 .padding(EdgeInsets(top: 24, leading: 0, bottom: 0, trailing: 0))
                 .background(Color.blue50)

@@ -10,11 +10,13 @@ import SwiftUI
 struct KlikIDMTabs: View {
     var type: TabType
     var tabs: [Tab]
+    @Binding var selectedTabHomeNew: Int
+    var onTabSelected: (Int) -> Void
     var isDisabled: Bool? = false
     
     @State var isActive: Bool = true
     @State var selectedTabHome: Int = 0
-    @State var selectedTabHomeNew: Int = 0
+//    @State var selectedTabHomeNew: Int = 0
     @State var selectedTabCategory: Int = 0
     @State private var isPressed = false
     @State private var isLongPressed = false
@@ -27,7 +29,7 @@ struct KlikIDMTabs: View {
         case .cart: TabCart()
         case .home: TabHome()
         case .category: TabCategory()
-        case .home_new: TabHomeNew()
+        case .homeNew: TabHomeNew()
         case .home_new2: TabHomeNewZoom()
         default: TabHome()
         }
@@ -396,6 +398,7 @@ struct KlikIDMTabs: View {
                                 if(index == 1) {
                                     Button(action: {
                                         selectedTabHomeNew = index
+                                        onTabSelected(index)
                                     }) {
                                         ZStack() {
                                             HStack(spacing: 0) {
@@ -436,6 +439,7 @@ struct KlikIDMTabs: View {
                                 if index == 1 {
                                     Button(action: {
                                         selectedTabHomeNew = index
+                                        onTabSelected(index)
                                     }) {
                                         ZStack() {
                                             HStack(spacing: 0) {
@@ -475,6 +479,7 @@ struct KlikIDMTabs: View {
                                 } else {
                                     Button(action: {
                                         selectedTabHomeNew = index
+                                        onTabSelected(index)
                                     }) {
                                         VStack(spacing: 0) {
                                             HStack(spacing: 0) {
@@ -675,7 +680,7 @@ struct KlikIDMTabs: View {
         case home
         case category
         case promo
-        case home_new
+        case homeNew
         case home_new2
     }
     

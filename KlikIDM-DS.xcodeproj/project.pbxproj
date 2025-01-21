@@ -33,17 +33,29 @@
 		503DC1CC2CED8FE300D8893B /* Exceptions for "KlikIDM-DS" folder in "KlikIDM-DS" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Documentation/HomeTabLayout.md,
 				Info.plist,
 			);
 			target = 50E644AA2CE5E58E00D193C7 /* KlikIDM-DS */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		503B85482D3F5D330085068A /* Exceptions for "KlikIDM-DS" folder in "Compile Sources" phase from "KlikIDM-DS" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 50E644A72CE5E58E00D193C7 /* Sources */;
+			membershipExceptions = (
+				Documentation/HomeTabLayout.md,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		50E644AD2CE5E58E00D193C7 /* KlikIDM-DS */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				503DC1CC2CED8FE300D8893B /* Exceptions for "KlikIDM-DS" folder in "KlikIDM-DS" target */,
+				503B85482D3F5D330085068A /* Exceptions for "KlikIDM-DS" folder in "Compile Sources" phase from "KlikIDM-DS" target */,
 			);
 			path = "KlikIDM-DS";
 			sourceTree = "<group>";

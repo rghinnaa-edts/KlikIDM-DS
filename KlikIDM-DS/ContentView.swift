@@ -41,7 +41,7 @@ struct ContentView: View {
         DesignSystemItem("TextFields", AnyView(TextfieldView())),
         DesignSystemItem("Toast", AnyView(ToastView())),
         DesignSystemItem("Tabs", AnyView(TabsView())),
-        DesignSystemItem("TabsNew", AnyView(TabsViewNew())),
+        DesignSystemItem("HomeTab", AnyView(HomeTabView())),
         DesignSystemItem("Slider", AnyView(SliderView()))
     ]
     

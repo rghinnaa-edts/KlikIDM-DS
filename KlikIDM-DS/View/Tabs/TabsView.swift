@@ -22,39 +22,53 @@ struct TabsView: View {
         KlikIDMTabs.Tab(icon: "", title: "Tab", badge: "0")
     ]
     
+    @State private var selectedTab: Int = 0
+    
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 0) {
                     KlikIDMTabs(
                         type: KlikIDMTabs.TabType.cart,
-                        tabs: []
+                        tabs: [],
+                        selectedTabHomeNew: $selectedTab,
+                        onTabSelected: { index in
+                            selectedTab = index
+                            
+                        }
                     )
                     
                     KlikIDMTabs(
                         type: KlikIDMTabs.TabType.home,
-                        tabs: tabhome
+                        tabs: tabhome,
+                        selectedTabHomeNew: $selectedTab,
+                        onTabSelected: { index in
+                            selectedTab = index
+                            
+                        }
                     )
                     .padding(8)
                     .background(Color.blue50)
                     
                     KlikIDMTabs(
                         type: KlikIDMTabs.TabType.category,
-                        tabs: tabcategory
+                        tabs: tabcategory,
+                        selectedTabHomeNew: $selectedTab,
+                        onTabSelected: { index in
+                            selectedTab = index
+                            
+                        }
                     )
                     .padding(8)
                     
                     KlikIDMTabs(
-                        type: KlikIDMTabs.TabType.home_new,
-                        tabs: tabhome
-                    )
-                    .padding(EdgeInsets(top: 24, leading: 0, bottom: 0, trailing: 0))
-                    .background(Color.blue50)
-                    .padding(.top, 12)
-                    
-                    KlikIDMTabs(
-                        type: KlikIDMTabs.TabType.home_new2,
-                        tabs: tabhome
+                        type: KlikIDMTabs.TabType.homeNew,
+                        tabs: tabhome,
+                        selectedTabHomeNew: $selectedTab,
+                        onTabSelected: { index in
+                            selectedTab = index
+                            
+                        }
                     )
                     .padding(EdgeInsets(top: 24, leading: 0, bottom: 0, trailing: 0))
                     .background(Color.blue50)
