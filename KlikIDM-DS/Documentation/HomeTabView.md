@@ -25,7 +25,7 @@ Features
 
 Preview
 -------
-![HPTL](https://res.cloudinary.com/dr6cm6n5f/image/upload/v1737437384/hometablayout_z8e7il.gif)
+![HPTL](https://res.cloudinary.com/dr6cm6n5f/image/upload/v1737442931/hometablayout-ezgif.com-video-to-gif-converter_cjljyk.gif)
 
 Installation
 ------------
