@@ -76,5 +76,5 @@ KlikIDMTabs(
 )
 ```
 
-### 3\. [Code Implementation Example](https://github.com/rghinnaa-edts/KlikIDM-DS/blob/main/KlikIDM-DS/View/Tabs/HomeTabView.swift)
+### 3\. Code Implementation Example: [Click Here](https://github.com/rghinnaa-edts/KlikIDM-DS/blob/main/KlikIDM-DS/View/Tabs/HomeTabView.swift)
 
